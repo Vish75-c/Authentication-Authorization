@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-zinc-800 h-screen flex justify-center items-center ">
+    <div class="w-110 p-8  bg-zinc-500 rounded-lg text-black flex flex-col items-center ">
+        <h1 class="mb-2 font-bold text-2xl">SignUp form</h1>
+        <form action="/signup" method="post">
+            <input type="text" name="username" placeholder="Username" class="w-full outline-none bg-zinc-700 p-2 rounded mt-3">
+            <input type="text" name="email" placeholder="Email" class="w-full outline-none bg-zinc-700 p-2 rounded mt-3">
+            <input type="text" name="password" placeholder="Password" class="w-full outline-none bg-zinc-700 p-2 rounded mt-3">
+            <input type="text" name="mobile" placeholder="Mobile Number" class="w-full outline-none bg-zinc-700 p-2 rounded mt-3">
+            
+            <button class="bg-blue-800 p-2 mt-3 text-white rounded w-full ">Create User</button>
+        </form>
+        <div class="w-full mt-3 flex justify-center items-center ">
+            <h1 class="text-zinc-700">Already have an account?</h1>
+            <a href="signin" class="text-blue-700">Login</a>
+        </div>
+    </div>
+</body>
+</html>
